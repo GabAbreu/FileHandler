@@ -24,7 +24,7 @@ export default function FileUploader(props){
         event.preventDefault()
         const getData = async () => {
             try{
-                const { data } = await axios.post('http://localhost:8080/upload', formData, {
+                const { data } = await axios.post('http://localhost:3001/upload', formData, {
                     headers: {
                         "Content-Type": "multipart/form-data"
                     }
